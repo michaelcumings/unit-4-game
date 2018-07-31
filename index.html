@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector Game</title>
+
+    <!-- Added a link to Reset-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Added a link to local css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+        <div class="container">
+
+        <div class="jumbotron">
+                <h1 class="display-4">Crystal Collector!</h1>
+                <p>You will be given a random number at the start of the game as a target.</p>
+                <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to the target number.  You lose the game if your total score goes above the target number.</p>
+                <p>The value of each crystal is unknown in each game until you click on it.</p>
+              </div>
+
+        <div class="row">
+        <div class="col-sm"><button type="button" id="brown" class="btn btn-light"><img src="assets/images/browngem.png"></button></div>
+        <div class="col-sm"><button type="button" id="diamond" class="btn btn-light"><img src="assets/images/diamond.png"></button></div>
+        <div class="col-sm"><button type="button" id="purple" class="btn btn-light"><img src="assets/images/purplecrystal.png"></button></div>
+        <div class="col-sm"><button type="button" id="red" class="btn btn-light"><img src="assets/images/redcrystal.png"></button></div>
+        </div>
+        
+        
+        
+        
+
+        <button type="button" class="btn btn-primary">
+                Target Score <span class="badge badge-light" id="target">0</span>
+              </button>
+        <button type="button" class="btn btn-primary">
+                Total Score <span class="badge badge-light" id="total">0</span>
+              </button>
+        <button type="button" class="btn btn-primary">
+                Wins <span class="badge badge-light" id="wins">0</span>
+              </button>
+        <button type="button" class="btn btn-primary">
+                Losses <span class="badge badge-light" id="losses">0</span>
+              </button>            
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>    
+</body>
+</html>
+
+<!-- divs necessary:
+Crystal Collector game header 
+Instructions div 
+div showing target score
+dive showing wins and losses
+div within that for wins
+div next to that for losses
+div for each gem 
+div for Your Total Score is:
+div for total score -->
